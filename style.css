@@ -1,0 +1,130 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+main {
+  min-height: 100vh;
+  background-image: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--Violet);
+}
+header {
+  padding: 2rem 2.6rem;
+  position: relative;
+}
+header .logo img {
+  display: block;
+  width: 130px;
+}
+.landing {
+  padding: 2.6rem;
+  text-align: center;
+  color: white;
+}
+.landing img {
+  margin-bottom: 3rem;
+}
+.landing h1 {
+  font-size: 1.7rem;
+}
+.landing p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.849);
+}
+.landing .btn {
+  display: block;
+  width: fit-content;
+  background-color: white;
+  color: var(--Violet);
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin: 1.7rem auto 5rem;
+  padding: 0.9rem 5.2rem;
+  border-radius: 2rem;
+  box-shadow: 0px 1px 15px -8px black;
+  transition: 0.3s;
+}
+.landing .btn:hover {
+  background-color: var(--Soft-Magenta);
+  color: white;
+}
+.landing .social ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.landing .social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.landing .social a:hover {
+  color: var(--Soft-Magenta);
+  border-color: var(--Soft-Magenta);
+}
+@media (min-width: 1200px) {
+  main {
+    background: url(./images/bg-desktop.svg);
+    background-color: var(--Violet);
+    background-size: contain;
+  }
+  header {
+    padding: 3.5rem 4.2rem;
+  }
+  .landing {
+    padding: 3.5rem 4.2rem;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+  }
+  .landing img {
+    margin-right: 3rem;
+  }
+  .landing h1 {
+    font-size: 2.5rem;
+  }
+
+  .landing h1 {
+    font-size: 2.45rem;
+    max-width: 440px;
+  }
+  .landing .btn {
+    margin: 1.6rem 0;
+    padding: 0.9rem 4.5rem;
+  }
+  .landing .social {
+    position: absolute;
+    bottom: 3rem;
+    right: 7rem;
+  }
+}
